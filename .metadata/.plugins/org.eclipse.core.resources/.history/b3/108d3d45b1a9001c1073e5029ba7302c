@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>추가 input 태그</title>
+<style>
+h3 { color:blue } /* 내부스타일 */
+</style>
+<!--  외부스타일 -->
+<link rel='stylesheet' href='../css/common.css'>
+</head>
+<body>
+<a style='color:inherit; text-decoration: none'
+   href="http://localhost:8080/Web/HTML/0321_form.html"> (이전 input 태그 정리)</a>
+   <br><br>
+<table>
+	<tr><th>number 태그</th>
+		<td>숫자만 입력 할 수 있는 입력 칸</td>
+	</tr>
+	<tr><th>date 태그</th>
+		<td>날짜를 선택 할 수 있는 입력 칸</td>
+	</tr>
+	<tr><th>month 태그</th>
+		<td>월을 선택 할 수 있는 달력 태그</td>
+	</tr>
+	<tr><th>time 태그</th>
+		<td>시각을 선택 할 수 있는 시계 태그</td>
+	</tr>
+</table><br>
+<input type='number' min='0' max='1000' value='816' step='2'> 
+<!-- 
+	- min/max 값을 정해 놔도 다른 값이 입력됨 : 추후 프로그램으로 보정해야함
+	- step은 입력 배수 
+--> <br><br>
+<input type='date' value='2022-03-22'> 
+<!-- 
+	- 여기서 value값은 화면에 보이는 날짜
+	- 매일 날짜를 다르게 하려면 (ex 매일 오늘 날짜) 프로그램 보장
+--><br><br>
+<input type='month' value='2022-08'><br><br>
+<input type='time' value='00:30'>
+</body>
+</html>

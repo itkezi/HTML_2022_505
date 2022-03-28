@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel='stylesheet' href='../css/common.css'>
+<style>
+* { font-size: 15px}
+#1 { color: blue; }
+</style>
+</head>
+<body>
+<h2>선택자 알아 보기</h2>
+<table>
+<thead>
+	<tr>
+		<th>구분</th>
+		<th>표현</th>
+		<th>설명</th>
+	</tr>
+</thead>
+	<colgroup>
+		<col width='200px'>
+		<col width='100px'>
+		<col width='300px'>
+	</colgroup>
+	<tr>
+		<th>전체 선택자</th>
+		<td>*</td>
+		<td>모든 태그에 적용</td>
+	</tr>
+	<tr>
+		<th>아이디 선택자</th>
+		<td>#아이디명</td>
+		<td id='#1'>해당 id가 지정된 태그에 적용</td>
+	</tr>
+	<tr>
+		<th></th>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<th></th>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<th></th>
+		<td></td>
+		<td></td>
+	</tr>
+</table><br>
+- 전체 선택자를 통해 html 파일 내의 모든 태그에 대해 동일한 스타일을 적용할 수 있다.<br>
+- 
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

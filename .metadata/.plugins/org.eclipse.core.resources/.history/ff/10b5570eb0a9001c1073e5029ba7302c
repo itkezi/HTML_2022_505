@@ -1,0 +1,5 @@
+@charset "UTF-8";
+table { width: 750px; border-collapse: collapse; }
+th, td {border:1px solid lightgray ; padding:8px; }
+th {color:white;; }
+textarea {width:300px; height:100px; resize:none; }

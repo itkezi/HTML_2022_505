@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ALL HTML</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+body {
+	margin: 0 auto;
+	text-align: center; 
+	font-family: 'Nanum Myeongjo', serif;
+	}
+
+	#box { 
+		display: table;
+		margin: auto;
+		}
+		
+	#memo, #example {
+		display:table-cell;
+		vertical-align: top;
+		width: 280px;
+		margin: 20px;
+		padding: 30px 20px;
+		border:1px solid ; 
+		display:inline-block;	
+		}
+		
+h1 {
+	margin-top:30px;
+	}
+
+a {	
+	background-image: url('../images/paper.jpg');	
+	color: #787878;
+	margin: auto;
+	display:block;
+	width:170px;
+	background-color: white;
+	font-size: 15px;
+	text-decoration: none; 
+	padding: 5px 15px; 
+	border: dashed 1.5px lightgray;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px gray;
+	}
+</style>
+</head>
+<body>
+<h1>HTML 모음</h1>
+<a href="http://localhost:8080/Web/HTML/ALL.html" target='_blank'> ALL</a>
+<br>
+<div id='box'>
+	<div id='memo'>
+		<h3>필기</h3><br>
+		<a href="http://localhost:8080/Web/index.html" target='_blank'> 기본 태그/표/단축키</a>
+		<br>
+		<a href="http://localhost:8080/Web/HTML/0318_images.html" target='_blank'> 이미지 태그</a>
+		<br>
+		<a href="http://localhost:8080/Web/HTML/0318_video.html" target='_blank'> 동영상 태그</a>
+		<br>
+		<a href="http://localhost:8080/Web/HTML/0318_EX.html" target='_blank'> src 및 페이지 연결</a>
+		<br>
+		<a href="http://localhost:8080/Web/HTML/0321_form.html" target='_blank'> input 태그 정리 1</a>
+		<br>
+		<a href="http://localhost:8080/Web/HTML/0322_form.html" target='_blank'> input 태그 정리 2</a>
+		<br>
+		<a href="http://localhost:8080/Web/style/index.html" target='_blank'> 스타일 지정 실습</a>
+		<br>
+		<a href="http://localhost:8080/Web/css/common.css" target='_blank'> css</a>
+		<br>
+		<a href="http://localhost:8080/Web/HTML/0322_form.html" target='_blank'> input 태그 정리 2</a>
+		<br>
+		<a href="http://localhost:8080/Web/style/selector.html" target='_blank'> 선택자</a>
+		<br>
+		<a href="http://localhost:8080/Web/style/text.html" target='_blank'> Text style</a>
+		<br>
+		<a href="http://localhost:8080/Web/style/box.html" target='_blank'> 박스 모델</a>
+		<br>
+	</div>
+	
+	<div id='example'>
+		<h3>연습문제</h3><br>
+		<a href="http://localhost:8080/Web/HTML/0317_food.html" target='_blank'> EX급식표</a>
+		<br>
+		<a href="http://localhost:8080/Web/HTML/0321_EX.html" target='_blank'> EX회원가입</a>
+		<br>
+		<a href="http://localhost:8080/Web/HTML/0324_EX.html" target='_blank'> EX119페이지</a>
+		<br>
+		<a href="http://localhost:8080/Web/HTML/0324_EX2.html" target='_blank'> EX120페이지</a>
+		<br>
+		<a href="http://localhost:8080/Web/HTML/0325_EX.html" target='_blank'> EX163페이지</a>
+		<br>
+		<a href="http://localhost:8080/Web/HTML/0325_EX2.html" target='_blank'> EX164페이지</a>
+		<br>
+		<a href="http://localhost:8080/Web/HTML/0325_EX3.html" target='_blank'> EX191페이지</a>
+		<br>
+		<a href="http://localhost:8080/Web/HTML/0325_EX4.html" target='_blank'> EX192페이지</a>
+		<br>
+		<a href="http://localhost:8080/Web/HTML/0325_EX5.html" target='_blank'> EX233최신웹트렌드</a>
+		<br>
+	</div>
+</div>
+</body>
+</html>

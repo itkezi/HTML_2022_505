@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/d4788d8ed6.js" crossorigin="anonymous"></script> 
+<meta charset="UTF-8">
+<title>걍</title>
+</head>
+<body>
+
+
+<div id='box'>
+아이콘 실험
+
+<i class="fa-solid fa-face-anguished"></i>
+</div>
+
+</body>
+</html>

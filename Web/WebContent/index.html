@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이혜지</title>
+
+<style>
+table {width:500px; /* 50% */ ;
+	border-collapse: collapse; 
+	border: 1px solid #d1dade; 
+}
+thead {background-color: #93b3b7; }
+table th, table td {
+	border: 1px solid #586fab;
+	padding: 8px;
+	font-size: 14px; 
+}
+a { text-decoration: none; color: inital; cursor: pointer;  
+}
+</style>
+
+</head>
+<body>
+<a href="http://localhost:8080/Web/style/selector.html"> [선택자]</a>
+<br><br>
+<a href="http://localhost:8080/Web/style/text.html"> [Text style]</a>
+<br><br>
+<!-- <h1>H</h1> <h2>E</h2> <h4>L</h4> <h6>P . . .</h6> --><br><br>
+<h3><span style="color:#116185">1. 블록 레벨 텍스트 태그</span></h3>
+: 혼자서 한 줄을 차지하여 너비가 100% 꽉 차게 표시되는 태그<br>
+1) h태그 : heading태그 - 제목을 표시하는 태그로 h1 ~ h6이 있다.<br>
+<h1>가장 큰 제목태그</h1>
+<h6>가장 작은 제목태그</h6>
+<P>
+2) p태그 : paragraph - 단락을 표시하는 태그로
+줄바꿈 없이 텍스트가 한 줄로 표시됨<br>
+         텍스트의 길이가 브러우저 창의 너비보다 길면 자동으로 줄이 바뀐다.
+</P>
+3) br태그 : 줄바꿈 (닫는 태그가 없다.)<br>
+<p>
+4) hr태그(horizontal) : 주제가 바뀌거나 분위기 전환을 할 때 가로선 표시 (닫는 태그X)<br>
+</p>
+<hr>
+<div>
+	5) div 태그(division) : 영역을 나누는 블록 태그
+	<br><br>
+</div>
+<hr><hr>
+<h3><span style="color:#116185">2. 인라인 레벨 텍스트 태그</span></h3>
+<p>한 줄을 차지하지 않는 태그로 화면에 표시되는 컨텐츠 만큼의 너비를 차지하는 태그
+</p>
+<strong>1) strong 태그 : 텍스트를 굵게 표시하는 인라인 레벨 태그</strong>
+<strong>굵은 텍스트</strong> (칸이 남았기 때문에 한줄로 됨)
+<br><br>
+실행에서 제외하고자 하는 코드는 주석처리를 한다.<br>
+<!-- 내용 -->
+한 줄을 한꺼번에 주석처리 : ctrl + shift + c (똑같이 누르면 해제 가능)<br>
+여러 줄을 한꺼번에 주석처리 : ctrl + shift + /<br>
+2) Span 태그 : 특별한 뜻은 없지만 텍스트의 일부만 스타일 적용하고자 할 때 사용<br>
+<P>
+텍스트 일부만 <span style="color:red">스타일 적용</span>하기
+</P><br>
+<h3><span style="color:#116185">3. 목록을 만드는 태그</span></h3>
+1) u1(unordered list) : 순서가 없는 목록 태그
+list-style-type: disc; = 가장 기본타입 원형<br>
+<ul>
+	<li>메뉴1</li>
+	<li>메뉴2</li>
+	<li>메뉴3</li>
+	<li>메뉴4</li>
+	<li>메뉴5</li>
+</ul><br><br>
+2) ol(ordered list) : 순서가 있는 목록 태그<br>
+list-style-type : 의 기본타입은 demical(정수) 이다.<br>
+숫자, 알파벳 로마숫자로 순서를 표시한다.<br>
+start : 시작값 지정<br>
+type : 리스트 타입
+<ol>
+	<li>메뉴1</li>
+	<li>메뉴2</li>
+	<li>메뉴3</li>
+	<li>메뉴4</li>
+	<li>메뉴5</li>
+</ol>
+<ol start='3' type="A">
+	<li>메뉴1</li>
+	<li>메뉴2</li>
+</ol>
+<h3><span style="color:#116185">4. 표를 만드는 태그</span></h3>
+<p>table 태그, tr(table row) 태그, td(table data) <br>
+행열로 이루어진 표의 형태를 만들 때 사용하는 태그<br>
+tr : 행에 해당하는 태그<br>
+td :  행 내부의 열에 해당하는 셀 태그<br>
+th(table head) : 행 내부의 제목에 해당하는 셀 태그<br>
+caption 태그 : 표에 사용하는 제목 태그 (중앙상단위치)<br>
+셀병합 : colspan="병합할 칸 수"
+</p>
+
+<table>
+	<caption>동기 연락처</caption>
+	<tr><th>성명</th><th>전화번호</th></tr>
+	<tr><td> 이혜지 </td><td> 010-1234-5678 </td>
+	<tr><td> 곽소웅 </td><td> 010-1234-5678 </td>
+	<tr><td> 김건강 </td><td> 010-1234-5678 </td>
+	<tr><td> 이수옹 </td><td> 010-1234-5678 </td>
+</table><br>
+
+<table>
+	<caption>개별정보</caption>
+	<tr><th>성명</th>
+	    <td>이혜지</td>
+	</tr>
+	<tr><th>전화번호</th>
+	    <td>010-1234-5678</td>
+	</tr>
+	<tr><th>ID</th>
+	    <td>dkdlel816</td>
+	</tr>
+</table><br>
+
+<table>
+	<caption>곽소웅의 정보</caption>
+	<tr>
+		<th>성명</th>
+		<td>곽소웅</td>
+		<th>취미</th>
+		<td>동물의 숲</td>
+	</tr>
+	<tr>
+		<th>연락처</th>
+		<td colspan='3'>010-1234-5678</td>
+	</tr>
+</table><br>
+
+<table>
+	<caption>김건강의 정보</caption>
+	<tr><td rowspan="3">사진이미지</td>
+		<th>성명</th>
+		<td>김건강</td>
+	</tr>
+	<tr>
+		<th>취미</th>
+		<td>동물의 숲</td>
+		
+	</tr>
+	<tr>
+		<th>연락처</th>
+		<td>010-1234-5678</td>
+	</tr>
+</table><br>
+
+<table>
+	<caption>연습</caption>
+	<tr>
+		<th rowspan="2">개인회원</th>
+		<th>일반회원</th>
+		<td>훈련(구직자, 근로자)훈련</td>
+	</tr>
+	<tr>
+		<th>대리인 회원</th>
+		<td>기업/훈련기관 대리인 권한 부여</td>
+	</tr>
+	<tr>
+		<th>훈련기관</th>
+		<td colspan="2">나의 서비스 권한</td>
+	</tr>
+	<tr>
+		<th>기업회원</th>
+		<td colspan="2">행정 서비스 권한</td>
+	</tr>
+</table><br>
+
+<p>
+테이블 태그를 제목(thead), 본문(tbody), 요약(tfoot)의 구조로 표현할 수 있다. (화면상의 변화는 없음)<br>
+colgroup, col : 열믜 크기(width), 배경색(background-color)을 지정할 수 있다
+</p>
+<table>
+	<colgroup>
+	<col style='width:150px'>
+	<col style='width:100px'>
+	<col style='width:200px'>
+	<thead>
+		<tr>
+			<th>성명</th>
+			<th>성별</th>
+			<th>전화번호</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>곽소웅</td>
+			<td>여</td>
+			<td>010-1234-5678</td>			
+		</tr>
+		<tr>
+			<td>김건강</td>
+			<td>남</td>
+			<td>010-1234-5678</td>			
+		</tr>
+		<tr>
+			<td>이수옹</td>
+			<td>여</td>
+			<td>010-1234-5678</td>			
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+		<th>총인원수</th>
+		<th colspan="2">3명</th>
+		</tr>
+	</tfoot>
+</table><br>
+<h2>테이블 태그에 대한 꾸미기 style</h2>
+<ul>
+	<li>인라인 스타일: 태그에 직접 지정</li>
+	<li>내부 스타일 : html 문서 내부에 style 태그 안에 지정하는 형태</li>
+	<li>외부 스타일 : style만 지정하는 css파일을 따로 만들어 html 문서에 연결하는 형태 </li>
+</ul><br>
+
+<h2>다른 html 페이지로 연결하는 방법</h2>
+<ul>
+	<li><a target='_blank' href='0317_food.html'>식단표 페이지</a>
+	<li><a target='_blank' href='HTML/0318_images.html'>이미지 태그 실습</a>
+	<li><a target='_blank' href='HTML/0318_video.html'>동영상 태그 실습</a>
+	<li><a target='_blank' onclick="alert('()^-^)')">팝업창 띄우기</a>
+	<li><a target='_blank' onclick="href='0317_food.html'">식단표 새 창에 띄우기</a>
+	<li><a target='_blank' href='HTML/0318_EX.html'>마무리 연습</a>
+</ul>
+<br><br>
+
+
+
+
+<hr><hr>
+<strong>단축키 모음</strong> 
+<br>
+자동완성 : ctrl + space<br>
+키보드로 블럭 설정 : shift + 방향키<br>
+블럭 복사 붙여넣기 : Ctrl + alt + 방향키<br> 
+선택된  코드라인 블럭 이동 : alt + 방향키<br>
+코드라인 없애기 : ctrl + D <br><br>
+로컬 ip 주소 : 실제 ip 주소, localhost, 127.0.0.1<br>
+
+
+</body>
+</html>

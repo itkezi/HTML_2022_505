@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel='stylesheet' href='../css/common.css'>
+<style>
+* { font-size: 15px}
+</style>
+</head>
+<body>
+
+<h2>선택자 알아 보기</h2>
+<table>
+	<tr>
+		<th>전체 선택자</th>
+		<td>*</td>
+		<td>모든 태그에 적용</td>
+		<td>전체 선택자를 통해 html 파일 내의 모든 태그에 대해 동일한 스타일을 적용할 수 있다.</td>
+	</tr>
+</table>
+
+</body>
+</html>
