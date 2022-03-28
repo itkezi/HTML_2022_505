@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메뉴 스타일</title>
+
+<style>
+/* #first ul { */
+/* 	list-style: none; }	 list-style-type은 inline과 inline-block에서는 작동하지 않는다.*/
+#first ul li {
+	display: inline-block;
+		/* 	display: inline; 요소의 크기만 차지하기 때문에 적절치 않음*/
+	padding: 10px 0;
+	width:100px;
+	border: 1px solid #ccc;
+	text-align: center;
+	margin: 0 10px;
+	}
+	
+#second div{
+	border: 1px solid #ccc;
+	float: left;
+	}
+</style>
+
+</head>
+
+<body>
+<a href="http://localhost:8080/Web/HTML/ALL.html" target='_blank'> ALL</a>
+<br>
+
+
+<div id='first'>
+	<ul>
+		<li>메뉴1</li>
+		<li>메뉴2</li>
+		<li>메뉴3</li>
+		<li>메뉴4</li>
+	</ul>
+</div>
+<div id ='second'>
+	<div>메뉴1</div>
+	<div>메뉴2</div>
+	<div>메뉴3</div>
+	<div>메뉴4</div>
+</div>
+
+</body>
+</html>
