@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>레이아웃 실습2</title>
+</head>
+<body>
+
+<div in='container'>
+	<div id='header'>
+		<h1>header</h1>
+	</div>
+	<div id='side_left'>
+		<h2>side-left</h2>
+	</div>
+	<div id='side_right'>
+		<h2>side_right</h2>
+	</div>
+	<div id='content'>
+		<h2>header</h2>
+	</div>
+	<div id='footer'>
+		<h1>footer</h1>
+	</div>
+
+
+
+</div>
+
+
+
+</body>
+</html>

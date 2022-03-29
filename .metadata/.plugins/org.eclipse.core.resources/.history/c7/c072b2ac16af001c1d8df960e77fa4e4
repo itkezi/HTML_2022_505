@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>레이아웃 실습 1</title>
+
+<style>
+
+#header {
+	width: 1200px;
+	height: 120px;
+	background-color: #aaa;
+	}
+#side {
+	float:left;
+	width:300px;
+	height: 600px;
+	background-color: green;
+	}
+#content {
+	float:left;
+	width:900px;
+	height:600px;
+	background-color: lightgreen;
+	}
+#footer {
+	clear:both;
+	width: 1200px;
+	height: 100px;
+	background-color: #aaa
+	}
+</style>
+
+</head>
+<body>
+
+<a href="http://localhost:8080/Web/HTML/ALL.html" target='_blank'> ALL</a>
+<br>
+
+<div id ='header'>
+	<h1>헤더</h1>
+</div>
+<div id ='side'>
+	<h2>왼쪽 사이드바</h2>
+</div>
+<div id ='content'>
+	<h2>본문</h2>
+</div>
+<div id ='footer'>
+	<h2>푸터</h2>
+</div>
+
+
+</body>
+</html>

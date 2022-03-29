@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html5의 시맨틱 태그</title>
+</head>
+<body>
+<a href="http://localhost:8080/Web/HTML/ALL.html" target='_blank'> ALL</a>
+<br>
+
+<div>
+	<h3>시맨틱 태그</h3>
+	<p> 태그의 이름만으로도 역할을 짐작할 수 있도록 내부구조 파악이 용이한 태그
+
+
+</div>
+
+</body>
+</html>
