@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+table {
+	border: 1px solid lightgray;
+	border-collapse: collapse;
+}
+table tr {
+	border-bottom: 1px solid lightgray; 
+	height:40px;
+}
+table tr:first-child {  
+	border-top: 1px solid gray; }
+</style>
+
+
+</head>
+<body>
+	<h3>선택자</h3>
+
+	<table>
+		<tr>
+			<th>상위요소 하위요소</th>
+			<td>상위요소에 대한 자손요소에 적용</td>
+		</tr>
+
+	</table>
+</body>
+</html>

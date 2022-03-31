@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>입력양식</title>
+
+<style>
+	input[type=text], input[type=password] {
+	height:25px;
+	}
+	
+	input[type = checkbox] {
+	width : 20px;
+	height:20px;
+	vertical-align: middle;
+	}
+	input[type=radio] {
+	margin : 15px; /* 혹은 margin : 15px 0 15px 15px */
+	margin-right: 0;
+	}
+	input:enabled { background-color: lightgreen;}
+	input:disabled { color:red; font-weight: bold;}
+	input:focus {background-color: yellow;}
+</style>
+
+</head>
+<body>
+	<a href="http://localhost:8080/Web/HTML/ALL.html" target='_blank'>
+		ALL</a>
+	<br>
+
+<h3>동작이나 상태와 관련된 가상클래스</h3>
+1. 선택자 : enabled 활성화된 선택자<br>
+2. 선택자 : disabled 비확성화된 선택자 <br>
+3. 선택자 : checked 체크 박스나 라디오버튼에서 체크된 선택자<br> 
+4. 선택자 : focus 커서를 갖는 선택자<br>
+5. 선택자 : hover 마우스를 올렸을 때 선택된 선택자<br>
+6. 선택자 : active 클릭했을 때 선택된 선택자<br>
+
+
+	<h3>입력양식 선택자</h3>
+	<ul>
+		<li>성명:<input disabled type='text' name='name' value='홍길동'></li>
+		<li>아이디:<input focus type='text' name='id' value='id'></li>
+		<li>비밀번호:<input type='password' name='pw'></li>
+		<li>성별:<input type='radio' name='gender' value='여' id='female'><label for='female'>여</label>
+			<input type='radio' name='gender' value='남' id='male'><label for='male'>남</label></li>
+		<li>취미: <input type='checkbox' name='hobby' value='book' id='book'><label for='book'>독서</label>
+			<input type='checkbox' name='hobby' value='swim' id='swim'><label for='swim'>수영</label>
+			<input type='checkbox' name='hobby' value='run' id='run'><label for='run'>달리기</label>
+			<input type='checkbox' name='hobby' value='picture' id='picture'><label for='picture'>사진</label>
+			<input type='checkbox' name='hobby' value='draw' id='draw'><label for='draw'>그림</label>
+			<input type='checkbox' name='hobby' value='cook' id='cook'><label for='cook'>요리</label>
+			<input type='checkbox' name='hobby' value='movie' id='movie'><label for='movie'>영화</label>
+		</li>
+
+	</ul>
+
+
+</body>
+</html>

@@ -1,6 +1,0 @@
-@charset "UTF-8";
-body {text-align: center}
-table { border-collapse: collapse; }
-th, td { border: 1px solid lightgray; padding: 10px ; text-align: center; }
-th {	background-color: gray; color:white; }
-ul {list-style-type:none; }

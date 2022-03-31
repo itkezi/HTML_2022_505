@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>속성선택자</h3>
+	<p>선택자[속성] :속성을 갖는 모든 요소를 선택</p>
+
+	<div>
+		<h3>요소의 속성 선택자</h3>
+
+		<ul>
+			<li><a herf='https://www.naver.com/'>네이버</a></ul>
+			<li><a herf='https://www.naver.com/'>관리자에게</a></ul>
+			<li><a herf='https://www.naver.com/'>구글</a></ul>
+			<li><a herf='https://www.naver.com/'>다음</a></ul>
+			<li><a herf='https://www.naver.com/'>네이트</a></ul>
+
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>

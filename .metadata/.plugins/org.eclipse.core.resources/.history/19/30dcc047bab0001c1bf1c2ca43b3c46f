@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+	rel="stylesheet">
+<meta charset="UTF-8">
+<title>220331</title>
+<style>
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	letter-spacing: -0.05em;
+}
+
+#container {
+	margin: auto;
+	width:900px;
+}
+
+table {
+	width: 900px;
+	border-collapse: collapse;
+}
+
+table caption {
+	padding: 8px;
+	text-align: left;
+}
+
+table span {
+	color: orange;
+}
+
+table th, td {
+	line-height: 22px;
+	color: #727476;
+	border-left: 1px solid #e2e2e4;
+	padding: 14px;
+}
+
+table th {
+	font-weight: 400;
+	background-color: #f0f0f2;
+	border-bottom: 2px solid gray;
+}
+
+table th:first-child, table td:first-child {
+	border-left: none;
+}
+
+table td {
+	text-align: center;
+	border-bottom: 1px solid #e2e2e4;
+}
+
+table a {
+	text-decoration: none;
+	color: #727476;
+}
+
+table[img] {width:20; height:20px;}
+
+table td:nth-child(2) {
+	text-align: left;
+}
+
+table a:hover {
+	color: #4171df;
+	text-decoration: underline;
+}
+</style>
+
+
+</head>
+
+<body>
+	<a href="http://localhost:8080/Web/HTML/ALL.html" target='_blank'>
+		ALL</a>
+	<br>
+	<div id='container'>
+		<table>
+			<caption>
+				전체 <span>1,694</span> 건
+			</caption>
+			<colgroup>
+				<col width='80px'>
+				<col width='355px'>
+				<col width='130px'>
+				<col width='120px'>
+				<col width='105px'>
+				<col width='110px'>
+			<tr>
+				<th>번호</th>
+				<th>제목</th>
+				<th>작성자</th>
+				<th>등록일</th>
+				<th>첨부</th>
+				<th>조회수</th>
+			</tr>
+
+			<tr>
+				<td>1694</td>
+				<td><a href='#'>[공지] 수강신청 장애 및 HRD-Net 접속지연으로 인한 출석직권처리 협조
+						요청(처리완료)</a></td>
+				<td>홍원기</td>
+				<td>2022-03-28</td>
+				<td></td>
+				<td>1,655</td>
+			</tr>
+			<tr>
+				<td>1686</td>
+				<td><a href='#'>[공지] HRD-Net 업데이트로 인한 서비스 일시 중지 안내 - 2.25
+						(금) 12:20 ~ 12:50</a></td>
+				<td>이태성</td>
+				<td>2022-02-25</td>
+				<td></td>
+				<td>2,938</td>
+			</tr>
+			<tr>
+				<td>1693</td>
+				<td><a href='#'>[안내] 내일배움카드 진단상담 오류 관련 안내(조치완료)</a></td>
+				<td>홍원기</td>
+				<td>2022-03-22</td>
+				<td><img src='../images/clip.png'></td>
+				<td>3,663</td>
+			</tr>
+			<tr>
+				<td>1692</td>
+				<td><a href='#'>온라인청년센터 청년 서포터즈 2기 모집 안내</a></td>
+				<td>홍원기</td>
+				<td>2022-03-17</td>
+				<td>@</td>
+				<td>3,321</td>
+			</tr>
+			<tr>
+				<td>1691</td>
+				<td><a href='#'>[안내] 2022년 민간고용서비스 종사자 (무료) 보수교육</a></td>
+				<td>예부해</td>
+				<td>2022-03-10</td>
+				<td></td>
+				<td>4,704</td>
+			</tr>
+			<tr>
+				<td>1690</td>
+				<td><a href='#'>[알림] QR출석 출결 장애 알림 및 출석직권처리 협조 요청</a></td>
+				<td>홍원기</td>
+				<td>2022-03-08</td>
+				<td></td>
+				<td>6,609</td>
+			</tr>
+			<tr>
+				<td>1689</td>
+				<td><a href='#'>[안내] 2022년 상반기 K-디지털 트레이닝 1차 선정결과 공고</a></td>
+				<td>배현우</td>
+				<td>2022-02-28</td>
+				<td></td>
+				<td>5,322</td>
+			</tr>
+			<tr>
+				<td>1688</td>
+				<td><a href='#'>[안내] 국민내일배움카드 운영규정 개정(22.2.24.)에 따른 카드발급
+						신청절차 간소화 안내</a></td>
+				<td>이태성</td>
+				<td>2022-02-28</td>
+				<td></td>
+				<td>14,686</td>
+			</tr>
+			<tr>
+				<td>1687</td>
+				<td><a href='#'>[안내] HRD-Net 어플 업데이트 안내</a></td>
+				<td>홍원기</td>
+				<td>2022-02-25</td>
+				<td></td>
+				<td>5,184</td>
+			</tr>
+			<tr>
+				<td>1685</td>
+				<td><a href='#'>[알림] 2020년 1차「4차 산업혁명 선도훈련기관」성과평가 결과 및 이의신청
+						안내</a></td>
+				<td>홍원기</td>
+				<td>2022-02-24</td>
+				<td>@</td>
+				<td>1,230</td>
+			</tr>
+		</table>
+	</div>
+
+
+
+</body>
+</html>
