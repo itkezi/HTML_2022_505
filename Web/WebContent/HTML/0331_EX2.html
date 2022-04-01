@@ -12,27 +12,47 @@ body {
 
 nav {
 	margin: 0;
-	height: 60px;
+	height: 80px;
 	background-color: #0670b9;
-	height: 60px;
 }
 
 nav ul {
 	width: 1200px;
 	list-style: none;
 	font-size: 18px;
-	padding: 18px;
+	padding: 28px 18px;
 	margin: auto;
 }
 
 nav ul li {
 	display: inline-block;
-	margin: 0 100px 0 0;
+	margin: 0 87px 0 0;
+	font-weight: bold;
+}
+
+nav ul li:last-child {
+	margin: 0;
 }
 
 nav ul li a {
+	height: 36px;
 	text-decoration: none;
 	color: white;
+	text-decoration: none;
+}
+
+#info {
+	height: 30px;
+	border-bottom: 4px solid white;
+}
+
+#info2 {
+	color: yellow;
+	padding: 10 0px;
+}
+
+nav ul li a:hover {
+	color: yellow;
 }
 
 section {
@@ -49,6 +69,7 @@ section h3 {
 section p {
 	padding: 20px 0;
 	border-bottom: 2px solid black;
+	margin: 14px 0 35px 0;
 }
 
 aside {
@@ -56,33 +77,94 @@ aside {
 }
 
 aside ul {
-	height: 50.5px;
+	height: 50px;
 	border-bottom: 2px solid #0670b9;
 	list-style: none;
 	padding: 0;
 }
 
 aside ul li {
-	border: 1px solid #ddd;
-	border-bottom: none;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
 	/* 	display: inline-block; */
 	width: 177px;
+	height: 18px;
 	text-align: center;
 	float: left;
 	padding: 15px 0;
 	border-bottom: none;
+	font-weight: bold;
+	text-align: center;
 }
 
 aside #on {
 	border: 2px solid #0670b9;
-	color: #0670b9; font-weight : bold;
-	border-bottom: 3px solid #fff;
+	color: #0670b9;
 	font-weight: bold;
+	border-bottom: 3px solid #fff;
+}
+
+#search {
+	height: 40px;
+	margin: 10px 0;
+}
+
+#search div {
+	vertical-align: middle;
+	float: right;
+}
+
+#search a {
+	height: 36px;
+	float: left;
+	line-height: 36px;
+	border: 1px solid #666;
+	border-left: none;
+	padding: 0 10px;
+	/* 	display: block; */
+	line-height: 36px;
+	height: 36px;
+}
+
+#search input {
+	height: 36px;
+	border: 1px solid #666;
+	padding: 0px;
+	margin: 0 5px 0 10px;
+	width: 400px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+#search button {
+	color: #fff;
+	margin: 0;
+	width: 100px;
+	background-color: #0670b9;
+	border: none;
+	height: 38px;
+	margin: 0;
+}
+
+#scon {
+	border: 1px solid #0670b9 !important;
+	color: #0670b9;
+	text-decoration: underline;
 }
 
 table {
 	clear: both;
 	border-collapse: collapse;
+}
+
+table caption {
+	padding: 0 0 20px;
+	text-align: left;
+}
+
+table span {
+	font-weight: bold;
+	color: #0670b9
 }
 
 table th, td {
@@ -115,6 +197,72 @@ table a:hover {
 	color: #0670b9;
 	text-decoration: underline;
 }
+
+section #ctl {
+	margin: 20px 0;
+	text-align: center;
+}
+
+section #ctl a:hover {
+	color: #0670b9;
+	border: 1px solid #6070b9;
+}
+
+section #ctl a {
+	border: 1px solid #fff;
+	margin: 2px;
+	line-height: 30px;
+	display: inline-block;
+	text-decoration: none;
+	color: #666666;
+	min-width: 32px;
+	height: 32px;
+}
+
+section #ctl .side {
+	color: black;
+	font-weight: bold;
+	border: 1px solid #bbb;
+	font-weight: bold;
+}
+
+section #ctlon {
+	color: #0670b9 !important;
+	border: 1px solid #6070b9 !important;
+}
+
+footer {
+	width: 1200px;
+	margin: auto;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 60px 0 30px;
+}
+
+footer ul li {
+	display: inline;
+}
+
+footer ul li a {
+	color: #666666;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+footer ul li a:hover {
+	text-decoration: underline;
+}
+
+#ftblue {
+	color: #0670b9;
+}
+
+footer address {
+	font-style: normal;
+}
 </style>
 </head>
 <body>
@@ -127,7 +275,8 @@ table a:hover {
 				<li><a href='#'>국가데이터맵</a></li>
 				<li><a href='#'>데이터요청</a></li>
 				<li><a href='#'>데이터활용</a></li>
-				<li><a href='#'>정보공유</a></li>
+				<li id='info'><a id='info2' href='#'>정보공유</a></li>
+				<li><a href='#'>이용안내</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -142,9 +291,19 @@ table a:hover {
 				<li>유용한 사이트</li>
 			</ul>
 		</aside>
-		<br> <br>
+		<br>
+		<article id='search'>
+			<div>
+				<a id='scon'>제목/내용</a> <a>제목</a> <a>내용</a> <input type='text'
+					placeholder='검색어를 입력하세요'>
+				<button>검색</button>
+			</div>
+		</article>
 		<article>
 			<table>
+				<caption>
+					전체 <span>433</span> 건
+				</caption>
 				<colgroup>
 					<col width='100'>
 					<col width='650'>
@@ -245,9 +404,26 @@ table a:hover {
 
 			</table>
 		</article>
+		<div id='ctl'>
+			<a class='side' href='#'>≪</a> <a class='side' id='fl' href='#'>＜</a>
+			<a id='ctlon' href='#'>1</a> <a href='#'>2</a> <a href='#'>3</a> <a
+				href='#'>4</a> <a href='#'>5</a> <a href='#'>6</a> <a href='#'>7</a>
+			<a href='#'>8</a> <a href='#'>9</a> <a href='#'>10</a> <a
+				class='side' href='#'>＞</a> <a class='side' id='fl' href='#'>≫</a>
+		</div>
 	</section>
 	<footer>
-		<address></address>
+		<ul>
+			<li><a href='#'>이용약관</a></li>
+			<li><a href='#' id='ftblue'>개인정보처리방침</a></li>
+			<li><a href='#'>공공데이터포털소개</a></li>
+			<li><a href='#'>분쟁조정신청</a></li>
+			<li>개인정보분야별책임자 : 최시복</li>
+		</ul>
+		<address>
+			(30116) 세종특별자치시 한누리대로 411(어진동, 행정안전부 별관)대표번호 : 1566-0025 문의시간 :
+			09:00~18:00 (월~금) <br>ⓒ행정안전부. All rights reserved.
+		</address>
 	</footer>
 
 </body>

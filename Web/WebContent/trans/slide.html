@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>220401 이미지 변형</title>
+
+<style>
+img {
+	width: 300px;
+	height: 200px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	float: left;
+	margin: 20px 0 20px 20px;
+}
+
+ul li:last-child {
+	margin-right: 0;
+}
+
+.slide-wrap {
+	width: 660px;
+	height: 240px;
+	border: 2px dashed gray;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide {
+	position: absolute;
+	width: 1940px;
+	height: 240px;
+}
+
+#transform .slide:hover {
+	transform: translateX(-640px) /* translateX : X축만 이동*/
+}
+
+#transform .slide:active {
+	transform: translateX(-1280px)
+}
+
+#transform2 .slide-wrap {
+	margin-top: 50px;
+	width: 980px;
+}
+
+#transform2 .slide:hover {
+	transform: translateX(-320px);
+}
+#transform2 .slide:active {
+	transform: translateX(-640px);
+}
+</style>
+
+</head>
+<body>
+
+	<a href="http://localhost:8080/Web/HTML/ALL.html" target='_blank'>
+		ALL</a>
+	<br>
+
+	<h3>이미지 이동 실습</h3>
+
+	<div id='transform'>
+		<div class='slide-wrap'>
+			<div class='slide'>
+				<ul>
+					<li><img src='../images/dog2.jpg'></li>
+					<li><img src='../images/dog3.jpg'></li>
+					<li><img src='../images/rabbit.jpg'></li>
+					<li><img src='../images/sheep.jpg'></li>
+					<li><img src='../images/dog4.jpg'></li>
+					<li><img src='../images/sheep2.jpg'></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id='transform2'>
+		<div class='slide-wrap'>
+			<div class='slide'>
+				<ul>
+					<li><img src='../images/dog2.jpg'></li>
+					<li><img src='../images/dog3.jpg'></li>
+					<li><img src='../images/rabbit.jpg'></li>
+					<li><img src='../images/sheep.jpg'></li>
+					<li><img src='../images/dog4.jpg'></li>
+					<li><img src='../images/sheep2.jpg'></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>220401 변형</title>
+
+<style>
+body {
+	margin: 0;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	margin: 50px;
+}
+
+.box1 {
+	background-color: pink;
+}
+
+.box2 {
+	background-color: lightblue;
+}
+
+.box3 {
+	width: 100px;
+	height: 100px;
+	background-color: lightgreen;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	/* 물체의 왼쪽 상단으로부터 이동했기 때문에 조금 당겨줘야 정 중앙에 위치할 수 있다.*/
+	/* 	다시 말해 물체는 왼쪽상단에서 존재하는 것 */
+	transform: translate(-50%, -50%);
+
+	/* 	transform: translate(50%, 50%); 물체 크기의 50%만큼 이동 */
+}
+
+.box1:hover {
+	transform: rotate(30deg);
+	transform-origin: right top; /* 회전의 기준 지정*/
+}
+
+.box2:hover {
+	transform: rotate(30deg);
+}
+
+.box2:active {
+	transform: translate(300px, 0px); /* c축, y축 이등 */
+}
+
+#outer {
+	width: 600px;
+	height: 600px;
+	border: 1px solid;
+	position: relative;
+	margin: 50px;
+	height: 600px;
+}
+
+#inner {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(128, 128, 192);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+</style>
+
+
+
+</head>
+<body>
+	<a href="http://localhost:8080/Web/HTML/ALL.html" target='_blank'>
+		ALL</a>
+	<br>
+
+	<!-- 텍스트나 이미지 등을 움직이게 하기 위해 transform을 적용한다 -->
+
+	<div class='box box1'></div>
+	<div class='box box2'></div>
+	<div class='box3'></div>
+
+	<div id='outer'>
+		<div id='inner'></div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
