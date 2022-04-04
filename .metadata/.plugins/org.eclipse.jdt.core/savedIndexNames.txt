@@ -1,4 +1,2 @@
-INDEX VERSION 1.131+C:\Users\KS5051\Documents\workspace\HTMLworks\.metadata\.plugins\org.eclipse.jdt.core
-2623953071.index
+INDEX VERSION 1.131+C:\Users\itkez\OneDrive\¹®¼­\workspace\HTML_2022_505\.metadata\.plugins\org.eclipse.jdt.core
 1865797976.index
-1918552229.index

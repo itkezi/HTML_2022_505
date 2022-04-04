@@ -10,30 +10,100 @@
 <style>
 body {
 	font-family: 'Noto Sans KR', sans-serif;
+	color: #5c5c5e;
 }
 
 #main {
 	font-size: 22px;
-	color: #5c5c5e;
 }
 
 #container {
+	display: block;
+	margin: auto;
 	width: 1140px;
-	height: 160px;
+	height: 238px;
+	overflow: hidden;
 }
 
+/* #move {} */
+
+@keyframes slide {
+	0% {left:0px;}
+	23% {left:0px;}
+	25% {left:-380px;}
+	48% {left:-380px;}
+	50% {left:-760px;}
+	73% {left:-760px;}
+	75% {left:-1140px;}
+	99% {left:-1140px;}
+	100% {left:-0px;}
+	}
+
+#container ul {
+   position: relative;
+	animation: slide 11s 2s ease infinite ;
+	width: 2290px;
+	margin: 16px 0;
+	padding: 0;
+
+
+}
 .box {
-	font-size:14px;
-	display:inline-block;
-	list-style: none; width : 365px;
-	height: 160px;
-	border: 1px solid #eee;
-	background-color: #dceaf2;
+	box-sizing: border-box;
+	margin-right: 15px;
+	margin-left: -2px; 
+	position: relative;
+	font-size: 14px;
+	display: inline-block;
+	list-style: none;
 	width: 365px;
+	height: 160px;
+	border: 1px solid #e8e8e8;
+	background-color: #eef6ff;
+	width: 365px;
+	font-size: 14px;
+}
+
+.back {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	width: 100%;
+}
+
+.icon {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: 15px;
+	top: 10px;
+}
+
+.more {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	right: 30px;
+	top: 20px;
 }
 
 .title {
-font-size: 16px;
+	font-size: 16px;
+	position: absolute;
+	left: 80px;
+	top: 14px;
+}
+
+.text {
+	font-size: 14px;
+	width: 322px;
+	height: 67px;
+	margin: auto;
+	position: absolute;
+	left: 20px;
+	top: 75px;
+	letter-spacing: -0.8px;
 }
 </style>
 
@@ -45,26 +115,55 @@ font-size: 16px;
 	<a href="https://www.hrd.go.kr/hrdp/ma/pmmao/indexNew.do"
 		target='_blank'> 원본 </a>
 	<br>
-	<p id='main'>K-디지털 트레이닝(K-Digital Training)</p>
 	<div id='container'>
-		<ul>
-			<li class='box'>
-				<p class='title'>빅데이터</p>
-				<p>특정 목먹을 위한 정형/비정현 데이터의 생정, 수집 축정, 정제, 분석, 시각화에 필요한 기술 및 시스템,
-					S/W 개발과 응용 서비스에 관련된 분야</p>
-			</li>
-			<li class='box'>
-				<p class='title'>빅데이터</p>
-				<p>특정 목먹을 위한 정형/비정현 데이터의 생정, 수집 축정, 정제, 분석, 시각화에 필요한 기술 및 시스템,
-					S/W 개발과 응용 서비스에 관련된 분야</p>
-			</li>
-			<li class='box'>
-				<p class='title'>빅데이터</p>
-				<p>특정 목먹을 위한 정형/비정현 데이터의 생정, 수집 축정, 정제, 분석, 시각화에 필요한 기술 및 시스템,
-					S/W 개발과 응용 서비스에 관련된 분야</p>
-			</li>
+		<p id='main'>K-디지털 트레이닝(K-Digital Training)</p>
+		<div id='move'>
+			<ul>
+				<li class='box'><img class='back'
+					src='../images/bigdataback.png'> <img class='icon'
+					src='../images/bigdataicon.png'>
+					<p class='title'>빅데이터</p> <img class='more'
+					src='../images/more.png'>
+					<p class='text'>특정 목적을 위한 정형/비정현 데이터의 생정, 수집 축정, 정제, 분석, 시각화에
+						필요한 기술 및 시스템, S/W 개발과 응용 서비스에 관련된 분야</p></li>
+				<li class='box'><img class='back'
+					src='../images/iotback.png'> <img class='icon'
+					src='../images/ioticon.png'>
+					<p class='title'>사물 인터넷</p> <img class='more'
+					src='../images/more.png'>
+					<p class='text'>센서, 통신과 컴퓨팅 기능을 갖춘 단말 장치를 활용하기 위한 기반 기술 및 장비,
+						S/W, 시스템 개발과 응용서비스에 관련된 분야</p></li>
+				<li class='box'><img class='back'
+					src='../images/smartback.png'> <img class='icon'
+					src='../images/smarticon.png'>
+					<p class='title'>스마트 제조</p> <img class='more'
+					src='../images/more.png'>
+					<p class='text'>가상 물리 시스템을 기반으로 로봇 IoT, 인공지능 등 신기술을 활용하여 제조공정을
+					고도화하는 기술 및 시스템의 개발, 구축, 운영에 관련된 분야</p></li>
+				<li class='box'><img class='back'
+					src='../images/aiback.png'> <img class='icon'
+					src='../images/aiicon.png'>
+					<p class='title'>인공지능</p> <img class='more'
+					src='../images/more.png'>
+					<p class='text'>컴퓨터가 인간의 지적 업무를 대행하게 할 수 있는, 알고리즘,
+					프로그램, 시스템 개발 및 응용서비스에 관련된 분야</p></li>
+				<li class='box'><img class='back'
+					src='../images/cloudback.png'> <img class='icon'
+					src='../images/cloudicon.png'>
+					<p class='title'>클라우드 컴퓨팅</p> <img class='more'
+					src='../images/more.png'>
+					<p class='text'>사용자 필요에 따라 네트워크를 통해 유연하고 신속하게 IT 시스템과
+					서비스를 제공하는 기술 및 시스템 개발과 구축 운용에 관련된 분야</p></li>
+				<li class='box'><img class='back'
+					src='../images/securityback.png'> <img class='icon'
+					src='../images/securityicon.png'>
+					<p class='title'>정보보안</p> <img class='more'
+					src='../images/more.png'>
+					<p class='text'>4차 산업혁명 기반기술에 연관된 위험요소를 진단, 분석, 개선할 수 있는 보안체계수립 및
+					보안기술, 시스템, 솔루션 개발 운용 등에 관련된 분야</p></li>
 
-		</ul>
-	</div>
+			</ul>
+		</div>
+		</div>
 </body>
 </html>
