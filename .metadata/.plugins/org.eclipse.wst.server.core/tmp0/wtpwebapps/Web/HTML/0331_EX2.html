@@ -11,6 +11,7 @@ body {
 }
 
 nav {
+	min-width: 1200px;
 	margin: 0;
 	height: 80px;
 	background-color: #0670b9;
@@ -263,6 +264,55 @@ footer ul li a:hover {
 footer address {
 	font-style: normal;
 }
+
+#popup-background {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: #000;
+	opacity: 0.5;
+	background-color: #000;
+	top: 0;
+	left: 0;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	/* 	 또는 background-color: rgba(0, 0, 0, 0.3); */
+}
+
+#popup {
+	display: none;
+	width: 400px;
+	height: 350px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 2px solid #333;
+	width: 400px;
+}
+
+#popup div {
+	height: 300px;
+}
+
+#popup img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#popup a {
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #fff;
+}
 </style>
 </head>
 <body>
@@ -280,6 +330,8 @@ footer address {
 			</ul>
 		</nav>
 	</header>
+	
+	
 	<section>
 		<h3>개발자 네트워크</h3>
 		<p>개발자들 간의 각종 문제해결 방안, 개발 노하우, 데이터 가공 노하우 등을 자유롭게 참여하여 의견을 나눌 수 있는
@@ -296,7 +348,7 @@ footer address {
 			<div>
 				<a id='scon'>제목/내용</a> <a>제목</a> <a>내용</a> <input type='text'
 					placeholder='검색어를 입력하세요'>
-				<button>검색</button>
+				<button onclick="popup('block')">검색</button>
 			</div>
 		</article>
 		<article>
@@ -425,6 +477,39 @@ footer address {
 			09:00~18:00 (월~금) <br>ⓒ행정안전부. All rights reserved.
 		</address>
 	</footer>
+
+	<div id='popup-background'></div>
+	<div id='popup'>
+		<div>
+			<img src='../images/rabbit.jpg'> <a onclick='popup("none")'>닫기</a>
+		</div>
+	</div>
+
+
+
+	<script>
+		function popup(value) {
+			document.getElementById('popup').style.display = value;
+			document.getElementById('popup-background').style.display = value;
+		}
+		// 		function popup() {
+		// 			document.getElementById('popup').style.display = 'block';
+		// 			document.getElementById('popup-background').style.display = 'block';
+		// 		}
+		// 		function popupclose() {
+		// 			document.getElementById('popup').style.display = 'none';
+		// 			document.getElementById('popup-background').style.display = 'none';
+		// 		}
+	</script>
+
+
+
+
+<a href="http://localhost:8080/Web/HTML/ALL.html" target='_blank'> ALL</a>
+<br>
+<a href="https://www.data.go.kr/bbs/dnb/selectDeveloperNetworkListView.do" target='_blank'> 원본</a>
+<br>
+
 
 </body>
 </html>
