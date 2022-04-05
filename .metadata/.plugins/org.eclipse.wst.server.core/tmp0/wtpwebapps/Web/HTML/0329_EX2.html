@@ -142,29 +142,90 @@ footer p {
 }
 
 footer span {
-	color: red;}
-
-/* lp태그의 부모 입장에서 볼 대 자식요소 2번째인 자식요소인 p태그 */
-p:nth-child(2) {
-color:blue;
+	color: red;
 }
 
+/* lp태그의 부모 입장에서 볼 대 자식요소 2번째인 자식요소인 p태그 */
+/* p:nth-child(2) { */
+/* 	color: blue; */
+/* } */
+
+.menu {
+	float: left;
+}
+
+.submenu li {
+	font-size: 18px;
+}
+
+.submenu {
+	position: absolute;
+	left: 0;
+	top: 130px;
+	width: 100%;
+	min-width: 1200px;
+	background-color: #f5f6ff;
+	border-bottom: 1px solid #ddd;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: 0.3s;
+	box-shadow: 0 4px 4px 2px #eee;
+}
+
+.top .menu:hover + .submenu {
+	transform:scaleY(1);
+}
 </style>
 
 </head>
 <body>
 	<a href="http://localhost:8080/Web/HTML/ALL.html" target='_blank'>
 		ALL</a>
-	<a href="https://www.hrd.go.kr/hrdp/ji/pjiao/PJIAO0100L.do" target='_blank'>
-		원본</a>
+	<a href="https://www.hrd.go.kr/hrdp/ji/pjiao/PJIAO0100L.do"
+		target='_blank'> 원본</a>
 	<br>
 	<div id='container'>
 		<header>
-			<ul>
-				<li><a href='#'>훈련과정</a></li>
-				<li><a href='#'>지원제도</a></li>
-				<li><a href='#'>일자리·직업정보</a></li>
-				<li><a href='#'>지식정보센터</a></li>
+			<ul class='top'>
+				<li><a class='menu' href='#'>훈련과정</a>
+					<div class='submenu'>
+						<ul>
+							<li>기업 훈련과정</li>
+							<li>일학습병행과정</li>
+							<li>정부부처별 훈련과정</li>
+							<li>유관기관 훈련과정</li>
+							<li>STEP 이러닝</li>
+						</ul>
+					</div></li>
+				<li><a class='menu' href='#'>지원제도</a>
+				<div class='submenu'>
+						<ul>
+							<li>정부지원사업안내</li>
+							<li>범부처 신기술 훈련 사업</li>
+							<li>정부부처별 지원사업안내</li>
+							<li>법령/서식/규정</li>
+							<li>일학습병행</li>
+						</ul>
+					</div></li>
+				<li><a class='menu' href='#'>일자리·직업정보</a>
+				<div class='submenu'>
+						<ul>
+							<li>구인정보</li>
+							<li>자격정보</li>
+							<li>직업사전</li>
+							<li>학과정보</li>
+							<li>NCS 분류체계</li>
+						</ul>
+					</div></li>
+				<li><a class='menu' href='#'>지식정보센터</a>
+				<div class='submenu'>
+						<ul>
+							<li>인재뱅크</li>
+							<li>스타훈련교사</li>
+							<li>훈련기관평가정보</li>
+							<li>훈련/고용통계</li>
+						</ul>
+					</div></li>
 			</ul>
 		</header>
 		<hr>
@@ -268,10 +329,10 @@ color:blue;
 					</tbody>
 					<tfoot>
 						<tr>
-						<td>계</td>
-						<td>82</td>
-						<td>267</td>
-						<td>1049</td>
+							<td>계</td>
+							<td>82</td>
+							<td>267</td>
+							<td>1049</td>
 						</tr>
 					</tfoot>
 				</table>

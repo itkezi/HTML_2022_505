@@ -43,6 +43,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\KS5051\Documents\workspace\HTMLworks"/>
 			<item value="C:\Users\itkez\OneDrive\문서\workspace\HTML_2022_505"/>
 		</list>
 	</section>

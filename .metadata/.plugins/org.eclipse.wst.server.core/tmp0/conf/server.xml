@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\itkez\OneDrive\문서\workspace\HTML_2022_505\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\itkez\OneDrive\문서\workspace\HTML_2022_505\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\0322_web" path="/0322_web" reloadable="true" source="org.eclipse.jst.jee.server:0322_web"/><Context docBase="C:\Users\itkez\OneDrive\문서\workspace\HTML_2022_505\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Web" path="/Web" reloadable="true" source="org.eclipse.jst.jee.server:Web"/></Host>
+      <Context docBase="C:\Users\KS5051\Documents\workspace\HTMLworks\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\KS5051\Documents\workspace\HTMLworks\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\0322_web" path="/0322_web" reloadable="true" source="org.eclipse.jst.jee.server:0322_web"/><Context docBase="C:\Users\KS5051\Documents\workspace\HTMLworks\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Web" path="/Web" reloadable="true" source="org.eclipse.jst.jee.server:Web"/></Host>
     </Engine>
   </Service>
 </Server>

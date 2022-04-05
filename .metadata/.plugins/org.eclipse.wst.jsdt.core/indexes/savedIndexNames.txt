@@ -1,8 +1,10 @@
-INDEX VERSION 1.4+C:\Users\itkez\OneDrive\¹®¼­\workspace\HTML_2022_505\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+INDEX VERSION 1.4+C:\Users\KS5051\Documents\workspace\HTMLworks\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 2241657225.index
-3840994904.index
-1664238186.index
-3694309536.index
-352842785.index
 1656323652.index
+1081186574.index
 1918552229.index
+1579944426.index
+2411409366.index
+1469526535.index
+1255361734.index
+1609142657.index
